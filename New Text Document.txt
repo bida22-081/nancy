@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+  <style>
+    .banner {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      text-align: center;
+    }
+
+    .banner img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .banner h2 {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .banner {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      .banner {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <img src="banner-image1.jpg" alt="Banner Image 1">
+    <h2>Title 1</h2>
+    <img src="banner-image2.jpg" alt="Banner Image 2">
+    <h2>Title 2</h2>
+    <img src="banner-image3.jpg" alt="Banner Image 3">
+    <h2>Title 3</h2>
+    <img src="banner-image4.jpg" alt="Banner Image 4">
+    <h2>Title 4</h2>
+    <img src="banner-image5.jpg" alt="Banner Image 5">
+    <h2>Title 5</h2>
+    <img src="banner-image6.jpg" alt="Banner Image 6">
+    <h2>Title 6</h2>
+  </div>
+</body>
+</html>
